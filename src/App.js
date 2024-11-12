@@ -6,13 +6,12 @@ function App() {
   const formatTime = (seconds) => {
     const minutes = Math.floor(seconds / 60);
     const remainingSeconds = seconds % 60;
-    return `${minutes}:${remainingSeconds < 10 ? "0" : ""}${remainingSeconds}`
-
+    return `Time: ${minutes}:${remainingSeconds < 10 ? "0" : ""}${remainingSeconds}`;
   };
   return (
     <>
-      <h1> StopWacth</h1>
-      <span>Time:{formatTime(time)}</span>
+      <h1> Stopwacth</h1>
+      <span>{formatTime(time)}</span>
       {intervaltracker===-1 ? (<button onClick={() => {
         
           const intervalId=setInterval(() => {
