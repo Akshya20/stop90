@@ -10,7 +10,7 @@ function App() {
   };
   return (
     <>
-      <h1>stopwacth</h1>
+      <h1>Stopwatch</h1>
       <span>{formatTime(time)}</span>
       {intervaltracker===-1 ? (<button onClick={() => {
         
